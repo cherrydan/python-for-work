@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="/home/danny/Programming/pythons/sqllite by selfedu/saper.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="730"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,5:mainusers"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="games" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="1" mode="0"/></sort><column_widths><column index="1" value="57"/><column index="2" value="44"/><column index="3" value="141"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="users" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="77"/><column index="2" value="30"/><column index="3" value="28"/><column index="4" value="44"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1">DELETE FROM users WHERE name='Николай' OR name='Владимир'
+INSERT INTO users VALUES('Яна', 2, 24, 830)
+INSERT INTO users VALUES('Фёдор', 1, 32, 764)
+
+SELECT name, sex, games.score FROM games
+JOIN users ON games.user_id = users.ROWID
+
+SELECT name, sex, games.score FROM users, games
+
+SELECT name, sex, games.score FROM games
+LEFT JOIN users ON games.user_id = users.ROWID
+
+INSERT INTO users VALUES('Фёдор', 1, 34, 500)
+
+SELECT name, sex, SUM(games.score) AS score
+FROM games
+JOIN users ON games.user_id = users.ROWID
+GROUP BY user_id
+ORDER BY score DESC
+</sql><current_tab id="0"/></tab_sql></sqlb_project>

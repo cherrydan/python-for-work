@@ -1,0 +1,6 @@
+ImmutableMultiDict([('phrase', 'K'), ('letters', 'xyz')])|127.0.0.1|Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36|set()
+ImmutableMultiDict([('phrase', 'Keiko'), ('letters', 'aeiouy')])|127.0.0.1|Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36|{'o', 'e', 'i'}
+ImmutableMultiDict([('phrase', 'lazy cat'), ('letters', 'aeiouxyz')])|127.0.0.1|Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36|{'z', 'y', 'a'}
+ImmutableMultiDict([('phrase', 'i love my cat'), ('letters', 'aeiou')])|127.0.0.1|Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36|{'e', 'o', 'i', 'a'}
+ImmutableMultiDict([('phrase', 'hitch-hiker'), ('letters', 'aeiou')])|127.0.0.1|Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36|{'i', 'e'}
+ImmutableMultiDict([('phrase', 'life, the universe and everything'), ('letters', 'aeiouxyz')])|127.0.0.1|Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36|{'y', 'u', 'i', 'e', 'a'}

@@ -1,0 +1,11 @@
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
+
+while True:
+    try:
+        s = input()
+    except EOFError:
+        print('Ended!')
+        break
+    else:
+        print(s*2)
