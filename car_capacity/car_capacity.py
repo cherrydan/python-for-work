@@ -22,4 +22,3 @@ def car_capacity(persons):
     else:
         return n
 
-3
