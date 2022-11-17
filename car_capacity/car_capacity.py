@@ -8,7 +8,7 @@
 import math
 
 
-def car_capacity(persons: int) -> int:
+def car_capacity(persons):
     """
     car_capacity(persons)
     returns number of cars, for transfer number of persons needed. One car capacity is 5 pers.
