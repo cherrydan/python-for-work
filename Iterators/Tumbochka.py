@@ -21,3 +21,8 @@ class Tumbochka:
     def __str__(self):
         boxes_items = self.boxes[1] + self.boxes[2] + self.boxes[3]
         return ", ".join(boxes_items)
+
+    def __iter__(self):  # магический метод-перебиратор
+        boxes_items = self.boxes[1] + self.boxes[2] + self.boxes[3]
+        it = iter(boxes_items)
+        return it
