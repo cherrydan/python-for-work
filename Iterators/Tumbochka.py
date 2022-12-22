@@ -1,3 +1,6 @@
+from Iterators.TumbochkaIterator import TumbochkaIterator
+
+
 class Tumbochka:
     def __init__(self):
         self.boxes = {
@@ -23,6 +26,9 @@ class Tumbochka:
         return ", ".join(boxes_items)
 
     def __iter__(self):  # магический метод-перебиратор
-        boxes_items = self.boxes[1] + self.boxes[2] + self.boxes[3]
-        it = iter(boxes_items)
-        return it
+        # boxes_items = self.boxes[1] + self.boxes[2] + self.boxes[3]
+        # it = iter(boxes_items)
+        # # for el in boxes_items:
+        # #     yield el, id(el) # генератор для самых маленьких
+        # return it
+        return TumbochkaIterator(self.boxes[1] + self.boxes[2] + self.boxes[3])
