@@ -7,7 +7,7 @@ def main():
     tumb.add_to_box("карандаш", 2)
     tumb.add_to_box("яблоко", 3)
     tumb.add_to_box("книга", 1)
-    print(tumb)
+    # print(tumb)
 
     my_shiny_list = [
         ["Это", "список", "внутри", "списка"],
@@ -16,9 +16,20 @@ def main():
         tumb,
     ]
 
-    for some_collection in my_shiny_list:
-        for el in some_collection:
-            print(el)
+    # for some_collection in my_shiny_list:
+    #     for el in some_collection:
+    #         print(el)
+
+    print(iter(tumb))
+
+    # it = iter(tumb)
+    # print(next(it))
+    # print(next(it))
+    # print(next(it))
+    # print(next(it))
+
+    for el in tumb:
+        print(el)
 
 
 if __name__ == "__main__":
